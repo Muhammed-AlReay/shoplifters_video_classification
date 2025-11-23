@@ -33,11 +33,13 @@ analysis.
 -   OpenCV\
 -   Deep Learning / CNN models\
 -   NumPy & Pandas\
--   Streamlit / Flask (optional)
+-   Streamlit / django 
 
 ------------------------------------------------------------------------
 
 ## 📁 Project Structure
+
+``` bash
 
     ├── data/                  # Dataset or video samples
     ├── models/                # Trained model files
@@ -48,17 +50,19 @@ analysis.
     ├── app.py                 # Deployment script
     ├── requirements.txt       # Libraries and dependencies
     └── README.md              # Project documentation
+```
+
 
 ------------------------------------------------------------------------
 
 ## 🧩 How It Works
 
-1.  The system takes input from CCTV or video files\
-2.  Frames are processed and analyzed using a trained model\
+1.  The system takes input from video files.
+2.  Frames are processed and analyzed using a trained model.
 3.  Suspicious actions are identified based on movement patterns &
-    object interaction\
-4.  Alerts or visual indicators are displayed\
-5.  Outputs are used to support security decision-making
+    object interaction.
+4.  Alerts or visual indicators are displayed.
+5.  Outputs are used to support security decision-making.
 
 ------------------------------------------------------------------------
 
@@ -67,8 +71,8 @@ analysis.
 ### 1️⃣ Clone the repository
 
 ``` bash
-git clone https://github.com/YourUsername/Shoplifting-Detection.git
-cd Shoplifting-Detection
+git clone https://github.com/Muhammed-AlReay/shoplifters_video_classification.git
+cd shoplifters_video_classification
 ```
 
 ### 2️⃣ Install dependencies
@@ -117,8 +121,3 @@ AI Engineer \| Computer Vision Specialist
 Contributions, issues, and suggestions are always welcome!\
 Feel free to open a pull request or start a discussion.
 
-------------------------------------------------------------------------
-
-## 📄 License
-
-This project is licensed under the MIT License.
