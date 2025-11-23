@@ -2,6 +2,10 @@
 
 A Computer Vision Project for Retail Security
 
+![Shoplifting Demo](https://raw.githubusercontent.com/YourUserName/YourRepo/main/image.png)
+
+
+
 ## 📌 Overview
 
 This project presents a **Shoplifting Detection System** designed to
