@@ -2,8 +2,11 @@
 
 A Computer Vision Project for Retail Security
 
-![Shoplifting Demo](https://raw.githubusercontent.com/YourUserName/YourRepo/main/image.png)
+![Shoplifting Demo1](https://github.com/Muhammed-AlReay/shoplifters_video_classification/blob/main/1.jpeg)
 
+![Shoplifting Demo2](https://github.com/Muhammed-AlReay/shoplifters_video_classification/blob/main/2.jpeg)
+
+![Shoplifting Demo3](https://github.com/Muhammed-AlReay/shoplifters_video_classification/blob/main/3.jpeg)
 
 
 ## 📌 Overview
