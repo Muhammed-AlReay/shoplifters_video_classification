@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video</title>
+</head>
+<body>
+
+    <h2>✅ تم رفع وتشغيل الفيديو</h2>
+
+    {% if video_url %}
+    <video width="600" controls autoplay>
+        <source src="{{ video_url }}" type="video/mp4">
+        المتصفح لا يدعم تشغيل الفيديو
+    </video>
+    {% endif %}
+
+    <br><br>
+    <a href="{% url 'upload_video' %}">🔁 ارفع فيديو جديد</a>
+
+</body>
+</html>

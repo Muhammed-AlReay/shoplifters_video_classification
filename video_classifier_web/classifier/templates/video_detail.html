@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Preview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #ffffff;
+        }
+        .video-container {
+            background-color: #161b22;
+            border: 1px solid #2f363d;
+            border-radius: 12px;
+            padding: 20px;
+            width: 65%;
+            margin: auto;
+            margin-top: 40px;
+            text-align: center;
+            box-shadow: 0px 0px 20px rgba(0, 229, 255, 0.2);
+        }
+        .prediction-text {
+            font-size: 1.2rem;
+            margin-top: 12px;
+            font-weight: bold;
+            color: #00eaff;
+        }
+        .btn-back {
+            background-color: #00c8ff;
+            border: none;
+            margin-top: 15px;
+        }
+        .btn-back:hover {
+            background-color: #0098c9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="video-container">
+        
+        <h2 class="mb-3">🎬 Video Preview</h2>
+
+        <!-- Video Player -->
+        <video width="100%" controls class="rounded">
+            <source src="{{ video.video_file.url }}" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+
+        <!-- Prediction -->
+        <p class="prediction-text">
+            🧠 Prediction: {{ video.prediction }} <br>
+            🎯 Confidence: {{ video.confidence|floatformat:2 }}%
+        </p>
+
+        <!-- Back Button -->
+        <a href="{% url 'video_list' %}" class="btn btn-back">⬅ Back to Dashboard</a>
+
+    </div>
+
+</body>
+</html>

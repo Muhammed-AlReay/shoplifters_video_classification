@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirm Delete</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body { background-color: #0d1117; color: white; }
+        .box {
+            width: 450px;
+            margin: 150px auto;
+            background: #161b22;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #2f363d;
+        }
+        .btn-danger { width: 100%; }
+        a { color: #00c8ff; display: block; margin-top: 12px; }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h4>⚠️ Delete Video?</h4>
+    <p>Are you sure you want to delete this video?</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+
+    <a href="{% url 'video_list' %}">Cancel</a>
+</div>
+
+</body>
+</html>
